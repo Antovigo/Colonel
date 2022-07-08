@@ -4,3 +4,21 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+bbx	par.py	/^bbx = (corner_x, corner_x + 2*mask_radius) # bounding box x$/;"	v
+bby	par.py	/^bby = (corner_y, corner_y + 2*mask_radius) # bounding box y$/;"	v
+comp	run.py	/^    comp = process.composite(seg_img, fluo_img)$/;"	v
+composite	process.py	/^def composite(img1, img2):$/;"	f
+corner_x	par.py	/^corner_x = 160 # x position of top-left corner of the plate$/;"	v
+corner_y	par.py	/^corner_y = 550$/;"	v
+files	run.py	/^files = os.listdir(par.folder)$/;"	v
+fluo_file	run.py	/^    fluo_file = par.folder\/f'{stem}-mCherry.jpg'$/;"	v
+fluo_img	run.py	/^    fluo_img = process.mask(file_handling.read_channel(fluo_file, 'red'))$/;"	v
+folder	par.py	/^folder = path('\/mnt\/sysbio\/PAULSSON LAB\/Personal_Folders\/Antoine\/Old-school LTEE\/Competition\/22-07-08 Competition rehearsal\/Images')$/;"	v
+mask	process.py	/^def mask(img):$/;"	f
+mask_radius	par.py	/^mask_radius = 700$/;"	v
+normalize	process.py	/^def normalize(img, ceil = 1):$/;"	f
+out_folder	par.py	/^out_folder = path('\/mnt\/sysbio\/PAULSSON LAB\/Personal_Folders\/Antoine\/Old-school LTEE\/Competition\/22-07-08 Competition rehearsal\/Output')$/;"	v
+read_channel	file_handling.py	/^def read_channel(filename, channel):$/;"	f
+seg_file	run.py	/^    seg_file = par.folder\/f'{stem}-GFP.jpg'$/;"	v
+seg_img	run.py	/^    seg_img = process.mask(file_handling.read_channel(seg_file, 'green'))$/;"	v
+stems	run.py	/^stems = set(['-'.join([i.split('-')[0], i.split('-')[1]]) for i in files])$/;"	v

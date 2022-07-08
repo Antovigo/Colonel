@@ -9,3 +9,5 @@ It's not very fancy. There is no neural network, just basic functions.
 * Numpy
 * Matplotlib
 
+## Installation
+There is no installation, just run `run.py` in the repo. Parameters can be adjusted in the `par.py` module.
