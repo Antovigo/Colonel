@@ -27,3 +27,17 @@ def composite(img1, img2):
     n1 = normalize(img1)
     n2 = normalize(img2)
     return np.dstack((n2, n1, n1))
+
+####################
+### Segmentation ###
+####################
+
+def bandpass(img, floor = 1, ceil = 15):
+    '''Bandpass the image, to remove pixel noise and illumination heterogeneity.'''
+    return filters.difference_of_gaussians(img, floor, ceil)
+
+def threshold(img, threshold, normalized = True):
+    '''Apply a threshold.'''
+    if normalized:
+        img = normalize(img)
+    return img >= threshold
