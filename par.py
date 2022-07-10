@@ -4,8 +4,7 @@
 from pathlib import Path as path
 
 # Files
-folder = path('/mnt/sysbio/PAULSSON LAB/Personal_Folders/Antoine/Old-school LTEE/Competition/22-07-08 Competition rehearsal/Images')
-out_folder = path('/mnt/sysbio/PAULSSON LAB/Personal_Folders/Antoine/Old-school LTEE/Competition/22-07-08 Competition rehearsal/Output')
+folder = path('/mnt/sysbio/PAULSSON LAB/Personal_Folders/Antoine/Old-school LTEE/Competition/22-07-09 Big competition 1')
 
 # Cropping and masking
 mask_radius = 700
